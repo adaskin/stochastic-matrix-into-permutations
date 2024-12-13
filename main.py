@@ -35,7 +35,7 @@ def disjointcycles(p):
 
 
 
-def rand_perm_matrix_sparse(N):
+def rand_perm_matrix_sparse(n):
     from scipy.sparse import csr_matrix
     prow = np.random.permutation(n)
     P = csr_matrix((np.ones(n, dtype=int), (np.arange(n), prow)), shape=(n,n))
